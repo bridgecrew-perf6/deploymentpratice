@@ -1,9 +1,8 @@
 const express = require('express');
-const { append } = require('express/lib/response')
 const cors = require('cors')
 
 const path = require('path');
-const { dirname } = require('path');
+
 
 const app = express()
 app.use(cors())
@@ -21,7 +20,7 @@ app.use(express.static(path.join(__dirname, '../client')))
 
 
 
-
+const port = process.env.PORT || 4040
 
 app.listen(port, () => {
     console.log(`we on port ${port}`)
