@@ -1,5 +1,5 @@
 body {
-    background-image: url('/client/bg.png');
+    background-image: url('./bg.png');
     color: rgb(0, 30, 161);
     text-align: center;
 }
