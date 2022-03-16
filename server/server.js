@@ -12,8 +12,7 @@ app.use(express.json())
 //Middleware connecting static links
 app.use(express.static(path.join(__dirname, '../client')))
 app.use(express.static(path.join(__dirname, '../client/style.css')))
-
-
+app.use(express.static(path.join(__dirname, '../client/bg.png')))
 
 
 
